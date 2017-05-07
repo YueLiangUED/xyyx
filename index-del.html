@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>没有订单</title>
+    <link rel="stylesheet" href="css/reset.min.css">
+    <link rel="stylesheet" href="css/index-del.css">
+</head>
+<body>
+<div class="del">
+    <span></span>
+</div>
+</body>
+</html>
+<script>
+    (function(global){
+        function remChange(){
+            document.documentElement.style.fontSize=20*document.documentElement.clientWidth/750+'px';
+        }
+        remChange();
+        global.addEventListener('resize',remChange,false);
+    })(window);
+</script>

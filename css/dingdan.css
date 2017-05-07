@@ -1,0 +1,210 @@
+/*查询部分*/
+.query{
+    padding-left: 2rem;
+    background: #ffffff;
+}
+.query .query-title{
+    height:4.9rem;
+    text-align: left;
+    font-size: 1.3rem;
+    line-height: 4.9rem;
+    letter-spacing: 0.2rem;
+    color: #0085cf;
+}
+.queryInt{
+    position: relative;
+    display: -webkit-box;
+    -webkit-box-orient: horizontal;
+    -webkit-box-align: center;
+
+    display: -moz-box;
+    -moz-box-orient: horizontal;
+    -moz-box-align: center;
+
+    display: -o-box;
+    -o-box-orient: horizontal;
+    -o-box-align: center;
+
+    display: -ms-box;
+    -ms-box-orient: horizontal;
+    -ms-box-align: center;
+
+    display: box;
+    box-orient: horizontal;
+    box-align: center;
+
+    height:5.6rem;
+    border-bottom: 0.05rem solid #f3f3f3;
+}
+.queryInt span{
+    display: inline-block;
+}
+.query div:nth-child(2) span{
+    width:1.55rem;
+    height:1.8rem;
+    background: url("../images/query-name.png") center no-repeat;
+    background-size: cover;
+}
+.query div:nth-child(3) span{
+    width:2.2rem;
+    height:1.5rem;
+    background: url("../images/query-IdCard.png") center no-repeat;
+    background-size: cover;
+}
+.queryInt input{
+    position: absolute;
+    left: 5.5rem;
+    top:0;
+    bottom:0;
+    margin: auto;
+    height:2rem;
+    border:none;
+    outline: none;
+    font-size: 1.6rem;
+}
+.queryBtn{
+    position: relative;
+    margin-bottom: 32.2rem;
+    height:11.8rem;
+    background: #ffffff;
+}
+.queryBtn span{
+    position: absolute;
+    top:0;
+    bottom:0;
+    left: 0;
+    right:0;
+    margin: auto;
+    display: inline-block;
+    width: 34.7rem;
+    height: 4.95rem;
+    font-size: 1.6rem;
+    line-height: 4.5rem;
+    letter-spacing: 0.2rem;
+    color: #ffffff;
+    text-align: center;
+    background: url("../images/queryBtn.png") center no-repeat;
+    background-size: cover;
+    cursor:pointer;
+}
+/*查询结果*/
+.queryResult{
+    position: relative;
+    display: none;
+}
+.queryResult span{
+    position: absolute;
+    top:2.8rem;
+    left:0;
+    right:0;
+    margin:auto;
+    display: block;
+    width: 25.95rem;
+    height:0.65rem;
+    background: url("../images/query-result.png") center no-repeat;
+    background-size: cover;
+}
+.queryResult p{
+    position: absolute;
+    text-align: center;
+    font-size: 1.523rem;
+    letter-spacing: 0.1rem;
+    color: #333333;
+    top:2rem;
+    left: 0;
+    right:0;
+    margin: auto;
+}
+/*查询无订单*/
+.queryResult .default{
+    display: none;
+}
+.queryResult .default span{
+    position: absolute;
+    top:7.4rem;
+    display: block;
+    width: 10.05rem;
+    height:9.1rem;
+    background: url("../images/default-dingdan.png") center no-repeat;
+    background-size: cover;
+}
+.queryResult .default p{
+    position: absolute;
+    top:18.1rem;
+    margin-bottom:12.5rem;
+}
+/*查询有订单*/
+.queryResult .success{
+    display: none;
+}
+.queryResult .success div{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    margin-bottom: 16rem;
+    border-radius: 0.5rem;
+    top:5.2rem;
+    width:35.5rem;
+    height: 11rem;
+    background-color: #ffffff;
+}
+.queryResult .success p{
+    position: absolute;
+    text-align: left;
+    text-indent: 1rem;
+    font-size: 1.4rem;
+    color: #333333;
+}
+.queryResult .success .price{
+    top: 4.6rem;
+}
+.queryResult .success .price i{
+    position: static;
+    display: inline;
+    font-style: normal;
+}
+.queryResult .success .time{
+    color: #8c8c8c;
+    top:7.5rem;
+}
+.queryResult .success .number{
+    text-indent: 6.6rem;
+}
+.queryResult .success .number.time{
+    text-indent: 7.9rem;
+}
+.queryResult .success i{
+    position: absolute;
+    top:0;
+    bottom: 0;
+    margin: auto;
+    display: block;
+    width: 100%;
+    height:0.05rem;
+    background-color: #f3f3f3;
+    z-index: 2;
+}
+.queryResult .success b{
+    position: absolute;
+    top:2rem;
+    right: 1.3rem;
+    font-size: 1.4rem;
+    font-weight: normal;
+    color: #333333;
+}
+.queryResult .success span{
+    position: absolute;
+    top: 6.8rem;
+    right: -26rem;
+    display: block;
+    width: 8.5rem;
+    height: 2.9rem;
+    text-align: center;
+    font-size: 1.3rem;
+    line-height: 2.9rem;
+    color: #0085cf;
+    background: url("../images/details.png") center no-repeat;
+    background-size: cover;
+    cursor: pointer;
+}

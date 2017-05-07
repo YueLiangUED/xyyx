@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>用户信息填写</title>
+    <link rel="stylesheet" href="css/reset.min.css">
+    <link rel="stylesheet" href="css/swiper-3.4.2.min.css">
+    <link rel="stylesheet" href="css/write.css">
+</head>
+<body>
+<!--已选号码-->
+<div class="header">
+    <span>已选号码</span>
+    <p>15711277221</p>
+</div>
+<!--入网信息-->
+<div class="network content">
+    <div class="clear">
+        <span></span>
+        <p>
+            入网信息
+            <a>
+                (
+                <i>*</i>
+                为必填项)
+            </a>
+        </p>
+    </div>
+    <div class="line"><hr></div>
+    <div class="name info">
+        <p>
+            <i>*</i>
+            办卡人姓名
+        </p>
+        <input type="text" placeholder="姓名">
+    </div>
+    <div class="line"><hr></div>
+    <div class="IDcard info">
+        <p>
+            <i>*</i>
+            身份证号码
+        </p>
+        <input type="text" placeholder="办卡人身份证号码">
+    </div>
+</div>
+<div class="dispatching content">
+    <div class="clear">
+        <span></span>
+        <p>
+            配送信息
+            <a>
+                (
+                <i>*</i>
+                为必填项)
+            </a>
+        </p>
+    </div>
+    <div class="line"><hr></div>
+    <div id="home" class="active">配送到家</div>
+    <div id="school">到校自取</div>
+</div>
+<!--配送到家-->
+<div class="toHome content">
+    <div class="name info">
+        <p>
+            <i>*</i>
+            收货人姓名
+        </p>
+        <input type="text" placeholder="姓名">
+    </div>
+    <div class="line"><hr></div>
+    <div class="phone info">
+        <p>
+            <i>*</i>
+            联系电话
+        </p>
+        <input type="text" placeholder="电话">
+    </div>
+    <div class="line"><hr></div>
+    <div class="address info">
+        <p>
+            <i>*</i>
+            收货地址
+        </p>
+        <input id="selectCity" type="text" placeholder="请选择">
+    </div>
+    <div class="line"><hr></div>
+    <input class="detailAdd" type="text" placeholder="请填写详细地址，不少于5个字">
+</div>
+<!--到校自取-->
+<div class="toSchool content">
+    <div class="school info">
+        <p>
+            <i>*</i>
+            学&nbsp;&nbsp;&nbsp;校:
+        </p>
+    </div>
+    <input id="selectSchool" type="text" placeholder="选择学校">
+    <i></i>
+    <div class="writeOver">
+        <div class="line"><hr></div>
+        <p><span>领取时间：</span><span>2017年8月20日————2017年9月30日</span></p>
+        <p><span>领取地址：</span><span>北京大学营业厅-北京市海淀区学院路XX号</span></p>
+        <p><span>联系电话：</span><span>15756488997</span></p>
+    </div>
+</div>
+
+<!--选择学校-->
+<div id="school-list" class="city-list school-list">
+    <div id="school-list-title" class="city-list-title">
+        <p>取消</p>
+        <p>完成</p>
+    </div>
+    <!-- swiper -->
+    <div id="sch" class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><p>北京师范大学东校区</p></div>
+            <div class="swiper-slide"><p>北京师范大学西校区</p></div>
+            <div class="swiper-slide"><p>北京师范大学东校区</p></div>
+            <div class="swiper-slide"><p>北京师范大学东校区</p></div>
+            <div class="swiper-slide"><p>北京师范大学东校区</p></div>
+            <div class="swiper-slide"><p>北京师范大学东校区</p></div>
+            <div class="swiper-slide"><p>北京师范大学东校区</p></div>
+            <div class="swiper-slide"><p>北京师范大学东校区</p></div>
+            <div class="swiper-slide"><p>北京师范大学东校区</p></div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+</div>
+<div class="reminder content">
+    <p>
+        <span>温馨提示:</span>
+        签收时请务必本人签收并准备好身份证
+    </p>
+</div>
+<div class="price content">
+    <div class="clear">
+        <span></span>
+        <p>
+            商品金额
+        </p>
+        <p class="money">
+            ¥200
+        </p>
+    </div>
+    <div class="line">
+        <hr>
+    </div>
+    <div class="expense info">
+        <p>运费</p>
+        <p>¥0</p>
+    </div>
+    <div class="line">
+        <hr>
+    </div>
+    <div class="total info">
+        <p>
+            合计:
+            <i>¥200</i>
+        </p>
+    </div>
+</div>
+<div class="footer">
+    <div>
+        <input type="checkbox" id="myCheck" checked value="1">
+        <label for="myCheck"></label>
+        我已阅读并同意<a>《北京移动选号入网协议》</a>
+    </div>
+    <div class="button">
+
+    </div>
+</div>
+<!--选择城市-->
+<div class="city-list">
+    <div class="city-list-title">
+        <p>取消</p>
+        <p>完成</p>
+    </div>
+    <!-- swiper -->
+    <div id="add" class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><p>北京市</p></div>
+            <div class="swiper-slide"><p>河北省</p></div>
+            <div class="swiper-slide"><p>天津市</p></div>
+            <div class="swiper-slide"><p>吉林省</p></div>
+            <div class="swiper-slide"><p>辽宁省</p></div>
+            <div class="swiper-slide"><p>河北省</p></div>
+            <div class="swiper-slide"><p>山西省</p></div>
+            <div class="swiper-slide"><p>青海省</p></div>
+            <div class="swiper-slide"><p>山东省</p></div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+</div>
+<!--遮罩层-->
+<div id="mask" class="mask"></div>
+</body>
+</html>
+<script src="js/jquery-1.10.1.min.js"></script>
+<script src="js/swiper.min.js"></script>
+<script src="js/write.js"></script>
+<script>
+    var mySwiper = new Swiper('#add', {
+        direction : 'vertical',
+        //pagination : '.swiper-pagination',
+        slidesPerView: 5,
+        centeredSlides : true,
+    });
+    var mySwiper = new Swiper('#sch', {
+        direction : 'vertical',
+        //pagination : '.swiper-pagination',
+        slidesPerView: 5,
+        centeredSlides : true,
+    });
+</script>

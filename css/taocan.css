@@ -1,0 +1,144 @@
+html,body{
+    overflow: hidden;
+    background: #f3f3f3;
+}
+/*头部*/
+.header{
+    position: relative;
+    margin:0;
+    padding-top:1.2rem;
+    width: 37.5rem;
+    height:4.5rem;
+    background-color: #0085cf;
+}
+.header a{
+    position: absolute;
+    left:1rem;
+    top:0;
+    bottom:0;
+    margin: auto;
+    display: inline-block;
+    width:1.35rem;
+    height:1.35rem;
+}
+.header a span{
+    display: block;
+    width:0.9rem;
+    height:1.7rem;
+    background: url(../images/return.png) center no-repeat;
+    background-size: cover;
+}
+.header p{
+    font-size:1.8rem;
+    color:#fff;
+    line-height: 3.5rem;
+    text-align: center;
+}
+/*已选号码*/
+.number{
+    box-sizing: border-box;
+    margin: 1rem 0;
+    padding: 0 1rem;
+    width: 37.5rem;
+    height: 5rem;
+    background-color: #ffffff;
+}
+.number h2{
+    display: inline-block;
+    font-weight: normal;
+    font-size: 1.5rem;
+    line-height: 5rem;
+    color: #0085cf;
+}
+.number p{
+    display: inline-block;
+    margin-left: 18rem;
+    font-size: 1.6rem;
+    color: #fd8e84;
+    letter-spacing: 0.1rem;
+}
+.select{
+    //box-sizing: border-box;
+    margin-bottom: 30.8rem;
+    padding-left: 1rem;
+    padding-bottom: 1.6rem;
+    width: 36.5rem;
+    height: 16.9rem;
+    background-color: #ffffff;
+}
+.select p{
+    font-size: 1.3rem;
+    line-height: 4.25rem;
+    color: #666666;
+}
+.select  span{
+    display: inline-block;
+    margin-right: 2.5rem;
+    width: 8.4rem;
+    height: 2.9rem;
+    font-size: 1.4rem;
+    color: #333333;
+    text-align: center;
+    line-height: 2.9rem;
+    border: 0.05rem solid #333333;
+    border-radius: 0.3rem;
+}
+.select div:nth-child(5) span{
+    width: 9.3rem;
+}
+.select div:nth-child(5) .three{
+    text-align: left;
+    text-indent: 1.6rem;
+}
+.select i{
+    margin-right: -1rem;
+    margin-bottom: -1rem;
+    display: none;
+    width: 1.7rem;
+    height: 1.4rem;
+    background: url("../images/select.png") center no-repeat;
+    background-size: cover;
+}
+.selectT .one i{
+    margin-right: -0.8rem;
+}
+.selectT .two i{
+    margin-right: -1.1rem;
+}
+.selectB .three{
+    display: none;
+}
+.selectB .three i{
+    margin-left: 0.4rem;
+}
+.footer{
+    position: relative;
+    padding-left: 1rem;
+    width: 37.5rem;
+    height: 5.5rem;
+    background-color: #ffffff;
+}
+.footer p{
+    font-size: 2.3rem;
+    color: #fd8e84;
+    line-height: 5.5rem;
+}
+.footer span{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: inline-block;
+    width: 16rem;
+    height: 5.5rem;
+    font-size: 1.9rem;
+    color: #ffffff;
+    text-align: center;
+    line-height: 5.5rem;
+    background-color: #0085cf;
+}
+hr{
+    margin-top: 1.6rem;
+    width: 35.5rem;
+    height: 0.05rem;
+    background-color: #f3f3f3;
+}

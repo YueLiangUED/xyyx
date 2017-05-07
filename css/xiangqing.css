@@ -1,0 +1,333 @@
+html,body{
+    background-color: #f3f3f3;
+}
+.title{
+    box-sizing: border-box;
+    padding-top: 1.3rem;
+    width: 37.5rem;
+    height: 7.15rem;
+    text-align: center;
+    background-color: #ffffff;
+}
+.title span{
+    margin: 0 auto 1.1rem;
+    display: block;
+    width: 2.25rem;
+    height: 2.1rem;
+    background: url("../images/beihuo.png") center no-repeat;
+    background-size: cover;
+}
+.title p{
+    font-size: 1.6rem;
+    color: #333333;
+}
+.header{
+    box-sizing: border-box;
+    margin: 1rem 0 1rem 0;
+    padding: 0 1rem;
+    width: 37.5rem;
+    height: 5rem;
+    background-color: #ffffff;
+}
+.header span{
+    font-size: 1.5rem;
+    color: #0085cf;
+    line-height: 5rem;
+}
+.header p{
+    float: right;
+    font-size: 1.6rem;
+    color: #333333;
+    line-height: 5rem;
+}
+
+.content{
+    box-sizing: border-box;
+    position: relative;
+    padding: 0 1rem;
+    width: 37.5rem;
+    height: 13.3rem;
+    background-color: #ffffff;
+}
+.content div span{
+    float: left;
+    margin-top: 1.5rem;
+    display: inline-block;
+    width: 1.4rem;
+    height: 1.4rem;
+    background: url("../images/network.png") center no-repeat;
+    background-size: cover;
+}
+.content div:nth-child(1){
+    height: 4.5rem;
+}
+.content div:nth-child(1) p{
+    margin-left: 2rem;
+    font-size: 1.3rem;
+    color: #0085cf;
+    line-height: 4.5rem;
+}
+.line{
+    width: 37.5rem;
+    height: 0.05rem;
+}
+.line hr{
+    margin: 0 auto;
+    width: 35.5rem;
+    height: 0.05rem;
+    background-color: #f3f3f3;
+}
+.content .info{
+    height: 4.4rem;
+}
+.content .info p{
+    font-size: 1.4rem;
+    color: #333333;
+    line-height: 4.4rem;
+}
+.content i{
+    position: absolute;
+    display: block;
+    top: 4.6rem;
+    left: 11rem;
+    width: 25rem;
+    height: 4rem;
+    border: none;
+    font-style: normal;
+    font-size: 1.4rem;
+    line-height: 4.4rem;
+}
+.network .IDcard i{
+    top: 9rem;
+}
+.dispatching{
+    margin-top: 1rem;
+    height: 4.6rem;
+}
+.dispatching .clear span{
+    width: 1.5rem;
+    height: 1.2rem;
+    background: url("../images/dispatching.png") center no-repeat;
+    background-size: cover;
+}
+.dispatching .clear p a{
+    font-size: 1.2rem;
+    color: #666666;
+}
+
+.toHome.content{
+    height: 15.4rem;
+    background-color: #ffffff;
+}
+.toHome.content .name.info{
+    height: 4.4rem;
+}
+.toHome.content .name.info p{
+    margin-left: 0;
+    font-size: 1.4rem;
+    color: #333333;
+    line-height: 4.4rem;
+}
+.toHome .info i{
+    top: 0rem;
+}
+.toHome .phone i{
+    top: 4.5rem;
+}
+.toHome .address i{
+    top: 10rem;
+    line-height: 2rem;
+}
+.toHome .detailAdd{
+    width: 32rem;
+    top: 13.5rem;
+    left: 2rem;
+    font-size: 1.4rem;
+    line-height: 4rem;
+}
+
+.price{
+    box-sizing: border-box;
+    margin: 1rem 0 1rem 0;
+    height: 4.5rem;
+}
+.price .clear span{
+    width: 1.3rem;
+    height: 1.15rem;
+    background: url("../images/price.png") center no-repeat;
+    background-size: cover;
+}
+.price .clear .money{
+    position: absolute;
+    top: 0;
+    right: 2rem;
+    color: #333333;
+}
+
+.detail{
+    padding-top: 1.25rem;
+    height: 7.15rem;
+}
+.detail span{
+    display: block;
+    font-size: 1.4rem;
+    color: #333333;
+    line-height: 2.5rem;
+}
+.detail p{
+    float: left;
+    margin: -2rem 0 0 10.75rem;
+    font-size: 1.4rem;
+    color: #666666;
+}
+
+.reminder{
+    margin-top: 1rem;
+    height: 5rem;
+    font-size: 1.4rem;
+}
+.reminder span{
+    line-height: 5rem;
+    color: #666666;
+}
+.reminder p{
+    float: left;
+    margin-left: 7rem;
+    margin-top: -3.3rem;
+}
+.footer{
+    padding-left: 4.85rem;
+    height: 7.9rem;
+    line-height: 8.5rem;
+}
+
+.footer span{
+    display: inline-block;
+    box-sizing: border-box;
+    width: 11.9rem;
+    height: 3.4rem;
+    border: 0.1rem solid #666666;
+    border-radius: 5rem;
+    font-size: 1.6rem;
+    line-height: 3.4rem;
+    text-align: center;
+    color: #333333;
+}
+.footer span:last-child{
+    margin-left: 4rem;
+    color: #0085cf;
+    border-color: #0085cf;
+}
+
+/*遮罩层*/
+.mask {
+    position: absolute;
+    top: 0px;
+    filter: alpha(opacity=60);
+    background-color: #777;
+    z-index: 100;
+    left: 0px;
+    opacity: 0.6;
+    -moz-opacity: 0.6;
+}
+
+/*待支付弹窗*/
+.isDel{
+    display: none;
+    position: fixed;
+    top: 40%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    box-sizing: border-box;
+    width: 27rem;
+    height: 11.3rem;
+    border-radius: 2rem;
+    text-align: center;
+    background-color: #ffffff;
+    z-index: 999;
+}
+.isDel p{
+    font-size: 1.6rem;
+    color: #333333;
+    line-height: 6.7rem;
+}
+.isDel span{
+    display: inline-block;
+    width: 13.4rem;
+    height: 4.55rem;
+    border-top: 0.05rem solid #f3f3f3;
+    line-height: 4.55rem;
+    font-size: 1.7rem;
+    color: #0085cf;
+}
+.isDel span:nth-child(2){
+    border-right: 0.05rem solid #f3f3f3;
+}
+.footer .wuliu{
+    box-sizing: border-box;
+    display: block;
+    width: 11.9rem;
+    height: 3.4rem;
+    border: 0.1rem solid #0085cf;
+    border-radius: 3rem;
+    font-size: 1.6rem;
+    color: #0085cf;
+}
+
+/*倒计时*/
+.time{
+    box-sizing: border-box;
+    padding-left: 1rem;
+    width: 37.5rem;
+    height: 3.4rem;
+    background-color: #fdefc4;
+    font-size: 1.3rem;
+    color: #f18a26;
+    line-height: 3.4rem;
+}
+.time i{
+    display: inline-block;
+    margin-right: 0.4rem;
+    margin-bottom: -0.25rem;
+    width: 1.4rem;
+    height: 1.4rem;
+    background: url("../images/time.png") center no-repeat;
+    background-size: cover;
+}
+.footer .queren{
+    width: 34.65rem;
+    height: 4.95rem;
+    background: url("../images/button-tijiao.png") center no-repeat;
+    background-size: cover;
+}
+
+.message{
+    position: fixed;
+    padding-top: 2rem;
+    top: 35%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    box-sizing: border-box;
+    width: 27.1rem;
+    height: 12.9rem;
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 2rem;
+    z-index: 999;
+}
+.message p{
+    font-size: 1.4rem;
+    color: #333333;
+    line-height: 2.5rem;
+}
+.message span{
+    margin-top: 1.5rem;
+    display: block;
+    height: 4.5rem;
+    border-top: 0.05rem solid #f3f3f3;
+    font-size: 1.7rem;
+    color: #0085cf;
+    line-height: 4.5rem;
+}

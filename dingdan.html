@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>查询订单</title>
+    <link rel="stylesheet" href="css/reset.min.css">
+    <link rel="stylesheet" href="css/dingdan.css">
+</head>
+<body>
+
+<!--查询部分-->
+<div class="query">
+    <div class="query-title">
+        <p>请输入您的姓名和联系电话查询订单</p>
+    </div>
+    <div class="queryInt">
+        <span></span>
+        <input type="text" name="name" placeholder="姓名">
+    </div>
+    <div class="queryInt">
+        <span></span>
+        <input type="text" name="phone" placeholder="身份证号">
+    </div>
+</div>
+<!--查询订单按钮-->
+<div class="queryBtn">
+    <span>查询订单</span>
+</div>
+<!--查询结果-->
+<div class="queryResult">
+    <span></span>
+    <p>查询结果</p>
+    <div class="default">
+        <span></span>
+        <p>您还没有相关的订单</p>
+    </div>
+    <div class="success">
+        <div>
+            <p class="phone title">手机号:</p>
+            <p class="phone number">13876367897</p>
+            <p class="price">总金额：<i style="background-color: inherit">¥</i>200</p>
+            <p class="time title">下单时间:</p>
+            <p class="time number">2017-03-10 17:20</p>
+            <b style="color: #fd8e84">配送中</b>
+            <span>查看详情</span>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+<script type="text/javascript" charset="utf-8" src="js/jquery-1.10.1.min.js"></script>
+<script type="text/javascript" charset="UTF-8" src="js/dingdan.js"></script>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>网络不好</title>
+    <link rel="stylesheet" href="css/reset.min.css">
+    <link rel="stylesheet" href="css/index-del.css">
+</head>
+<body>
+<div class="no-network">
+    <span></span>
+    <p>网络不太给力，检查一下再来吧~</p>
+    <div class="reload">重新加载</div>
+</div>
+</body>
+</html>
+<script>
+    (function(global){
+        function remChange(){
+            document.documentElement.style.fontSize=20*document.documentElement.clientWidth/750+'px';
+        }
+        remChange();
+        global.addEventListener('resize',remChange,false);
+    })(window);
+</script>

@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>吉祥靓号</title>
+    <link rel="stylesheet" href="css/reset.min.css">
+    <link rel="stylesheet" href="css/swiper-3.4.2.min.css">
+    <link rel="stylesheet" href="css/aiqing.css">
+    <style>
+        i{
+            font-style: normal;
+        }
+        .march-letter{
+            color: #0085cf;
+        }
+        .selected-slider{
+            background-color:#0085cf;
+            color:#ffffff
+        }
+        .selected-tel{
+            border:0.05rem solid #0085cf;
+        }
+    </style>
+</head>
+<body>
+<!--头部-->
+<div class="header">
+    <input id="input" type="text" placeholder="搜索属于你的吉祥号吧">
+    <i></i>
+    <div class="swiper-container">
+        <div id="select-zone" class="swiper-wrapper">
+            <div class="swiper-slide first selected-slider">
+                <p><span>10</span>·十全十美</p>
+            </div>
+            <div class="swiper-slide">
+                <p><span>151</span>·要如意</p>
+            </div>
+            <div class="swiper-slide">
+                <p><span>157</span>·要福气</p>
+            </div>
+            <div class="swiper-slide">
+                <p><span>161</span>·福运相随</p>
+            </div>
+            <div class="swiper-slide">
+                <p><span>44</span>·喜事成双</p>
+            </div>
+            <div class="swiper-slide">
+                <p><span>404</span>·四季平安</p>
+            </div>
+            <div class="swiper-slide">
+                <p><span>446</span>·事事顺</p>
+            </div>
+            <div class="swiper-slide">
+                <p><span>451</span>·万事如意</p>
+            </div>
+            <div class="swiper-slide">
+                <p><span>516</span>·我要顺</p>
+            </div>
+            <div class="swiper-slide">
+                <p><span>549</span>·福事多</p>
+            </div>
+            <div class="swiper-slide">
+                <p><span>505</span>·五谷丰登</p>
+            </div>
+            <div class="swiper-slide">
+                <p><span>606</span>·六六大顺</p>
+            </div>
+            <div class="swiper-slide">
+                <p><span>657</span>·有福气</p>
+            </div>
+            <div class="swiper-slide">
+                <p><span>707</span>·七星高照</p>
+            </div>
+            <div class="swiper-slide">
+                <p><span>749</span>·喜事久</p>
+            </div>
+            <div class="swiper-slide">
+                <p><span>846</span>·百事顺</p>
+            </div>
+            <div class="swiper-slide">
+                <p><span>847</span>·百事吉</p>
+            </div>
+            <div class="swiper-slide">
+                <p><span>909</span>·九天揽月</p>
+            </div>
+            <div class="swiper-slide">
+                <p><span>916</span>·就要顺</p>
+            </div>
+        </div>
+    </div>
+    <div class="menu">
+        <span></span>
+    </div>
+</div>
+<div class="phoneList">
+    <ul id="tel-list" class="clear">
+
+    </ul>
+</div>
+<!--提示弹窗-->
+<div class="opc">
+    <p></p>
+</div>
+<!--底部固定按钮-->
+<div class="footer">
+    <ul>
+        <li class="indentBtn">
+            <span></span>
+            <p>我的订单</p>
+        </li>
+        <li class="joinBtn">加入备选</li>
+        <li class="buyBtn">立即购买</li>
+    </ul>
+</div>
+<!--我的备选按钮-->
+<div class="fixedBtn">
+    <i>1</i>
+</div>
+
+<!--全部标签-->
+<div class="all">
+    <p>全部标签</p>
+    <i class="close"></i>
+    <div class="line">
+        <hr>
+    </div>
+    <ul class="clear">
+        <li>
+            <a>10</a>
+            ·十全十美
+        </li>
+        <li>
+            <a>151</a>
+            ·要如意
+        </li>
+        <li>
+            <a>157</a>
+            ·要福气
+        </li>
+        <li>
+            <a>161</a>
+            ·福运相随
+        </li>
+        <li>
+            <a>44</a>
+            ·喜事成双
+        </li>
+        <li>
+            <a>404</a>
+            ·四季平安
+        </li>
+        <li>
+            <a>446</a>
+            ·事事顺
+        </li>
+        <li>
+            <a>451</a>
+            ·万事如意
+        </li>
+        <li>
+            <a>516</a>
+            ·我要顺
+        </li>
+        <li>
+            <a>549</a>
+            ·福事多
+        </li>
+        <li>
+            <a>505</a>
+            ·五谷丰登
+        </li>
+        <li>
+            <a>606</a>
+            ·六六大顺
+        </li>
+        <li>
+            <a>657</a>
+            ·有福气
+        </li>
+        <li>
+            <a>707</a>
+            ·七星高照
+        </li>
+        <li>
+            <a>749</a>
+            ·喜事久
+        </li>
+        <li>
+            <a>846</a>
+            ·百事顺
+        </li>
+        <li>
+            <a>847</a>
+            ·百事吉
+        </li>
+        <li>
+            <a>909</a>
+            ·九天揽月
+        </li>
+        <li>
+            <a>916</a>
+            ·就要顺
+        </li>
+    </ul>
+</div>
+<!--遮罩层-->
+<div class="mask"></div>
+<!--备选弹出层-->
+<div class="beixuan">
+    <p>
+        <i></i>
+        从以下号码中选择你最喜欢的吧~
+        <span>编辑</span>
+    </p>
+    <ul class="clear">
+        <!--<li class="bxActive">15111272323<i></i></li>
+        <li>13515151515<i></i></li>
+        <li>13515151515<i></i></li>
+        <li>13515151515<i></i></li>
+        <li>13515151515<i></i></li>-->
+    </ul>
+    <span class="beixuanBtn"></span>
+</div>
+</body>
+</html>
+<script src="js/jquery-1.10.1.min.js"></script>
+<script src="js/swiper.min.js"></script>
+<script src="js/index.js"></script>
+<script src="js/aiqing.js"></script>
+<!--
+<script>
+    var mySwiper = new Swiper('.swiper-container',{
+        loop : true,
+        slideToClickedSlide:true,
+        normalizeSlideIndex:false,
+        slidesPerView : 'auto',
+        loopedSlides :19,
+        onInit: function (swiper) {
+            $('.swiper-slide.first').css({'backgroundColor':'#0085cf','color':'#ffffff'});
+        },
+        onTap: function (swiper) {
+            $('.swiper-slide').css({'background':'#ffffff','color':'#666666'});
+            mySwiper.clickedSlide.style.backgroundColor = '#0085cf';
+            mySwiper.clickedSlide.style.color = '#ffffff';
+        }
+    });
+
+</script>-->

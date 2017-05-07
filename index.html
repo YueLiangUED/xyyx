@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>校园选号页</title>
+    <link rel="stylesheet" href="css/reset.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <style>
+        .march-letter{
+            color: #0085cf;
+        }
+        .selected-slider{
+            background-color:#0085cf;
+            color:#ffffff
+        }
+        .selected-tel{
+            border:0.05rem solid #0085cf;
+        }
+    </style>
+</head>
+<body>
+<!--头部icon-->
+<div class="header">
+    <ul class="clear">
+        <li>
+            <span class="aiqingBtn"></span>
+            <p>入学靓号</p>
+        </li>
+        <li>
+            <span class="shengriBtn"></span>
+            <p>生日靓号</p>
+        </li>
+        <li>
+            <span class="ruxueBtn"></span>
+            <p>爱情靓号</p>
+        </li>
+        <li>
+            <span class="jixiangBtn"></span>
+            <p>吉祥靓号</p>
+        </li>
+    </ul>
+</div>
+<!--搜索-->
+<div class="search clear">
+    <input id="input" type="text" placeholder="搜索你喜欢的数字 (建议2-4位)">
+    <i></i>
+    <span class="filter"></span>
+</div>
+<!--电话号码列表-->
+<div class="list phoneList">
+    <ul id="tel-list">
+        <!--<li>12345678911</li>
+        <li>12345678911</li>
+        <li>12345678911</li>
+        <li>12345678911</li>
+        <li>12345678911</li>
+        <li>12345678911</li>
+        <li>12345678911</li>
+        <li>12345678911</li>
+        <li>12345678911</li>
+        <li>12345678911</li>-->
+    </ul>
+</div>
+<!--底部固定按钮-->
+<div class="footer">
+    <ul>
+        <li class="indentBtn">
+            <span></span>
+            <p>我的订单</p>
+        </li>
+        <li class="joinBtn">加入备选</li>
+        <li class="buyBtn">立即购买</li>
+    </ul>
+</div>
+<!--我的备选按钮-->
+<div class="fixedBtn">
+    <i></i>
+</div>
+<!--筛选弹出层-->
+<div class="rightHide">
+    <span>筛选</span>
+    <div class="tese clear">
+        <p>特色靓号</p>
+        <ul>
+            <li class="active">不限</li>
+            <li>入学靓号</li>
+            <li>生日靓号</li>
+            <li>爱情靓号</li>
+            <li>吉祥靓号</li>
+        </ul>
+    </div>
+    <div class="tedian clear">
+        <p>号码特点</p>
+        <ul>
+            <li class="active">不限</li>
+            <li>不含4</li>
+            <li>AA</li>
+            <li>AABB</li>
+            <li>ABAB</li>
+        </ul>
+    </div>
+    <div class="haoduan clear">
+        <p>号段选择</p>
+        <ul>
+            <li class="active">不限</li>
+            <li>138</li>
+            <li>183</li>
+            <li>152</li>
+            <li>188</li>
+        </ul>
+    </div>
+    <div class="yixuan">
+        <p>已选条件</p>
+        <span class="delBtn">
+            <i></i>
+            清除所有
+        </span>
+        <div class="tiaojian">
+            <!--<span>爱情靓号</span>-->
+        </div>
+        <span class="entBtn">确定</span>
+    </div>
+</div>
+<!--遮罩层-->
+<div class="mask"></div>
+<!--提示弹窗-->
+<div class="opc">
+    <p></p>
+</div>
+<!--备选弹出层-->
+<div class="beixuan">
+    <p>
+        <i></i>
+        从以下号码中选择你最喜欢的吧~
+        <span>编辑</span>
+    </p>
+    <ul class="clear">
+        <!--<li class="bxActive">15111272323<i></i></li>
+        <li>13515151515<i></i></li>
+        <li>13515151515<i></i></li>
+        <li>13515151515<i></i></li>
+        <li>13515151515<i></i></li>
+        <li>13515151515<i></i></li>
+        <li>13515151515<i></i></li>
+        <li>13515151515<i></i></li>-->
+    </ul>
+    <span class="beixuanBtn"></span>
+</div>
+</body>
+</html>
+<script src="js/jquery-1.10.1.min.js"></script>
+<script src="js/index.js"></script>

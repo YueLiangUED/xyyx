@@ -1,0 +1,276 @@
+html,body{
+    background-color: #f3f3f3;
+}
+.header{
+    position: relative;
+    padding: 1.1rem 0 0 1.75rem;
+    box-sizing: border-box;
+    width: 37.5rem;
+    height: 5.1rem;
+    background-color: #ffffff;
+}
+.header input{
+    position: relative;
+    margin-bottom: 1rem;
+    box-sizing: border-box;
+    padding-left: 1.3rem;
+    width: 33rem;
+    height: 3rem;
+    border-radius: 5rem;
+    border: none;
+    font-size: 1.2rem;
+    color: #999999;
+    background-color: #f3f3f3;
+}
+.header>i{
+    position: absolute;
+    top: 1.8rem;
+    right: 4.5rem;
+    display: inline-block;
+    width: 1.55rem;
+    height: 1.55rem;
+    background: url("../images/search.png") center no-repeat;
+    background-size: cover;
+}
+
+
+.phoneList{
+    margin-top: 0.5rem;
+    box-sizing: border-box;
+    width: 37.5rem;
+}
+.phoneList ul li{
+    float: left;
+    box-sizing: border-box;
+    margin-bottom: 0.5rem;
+    padding-top: 0.8rem;
+    width: 18.5rem;
+    height: 8.05rem;
+    text-align: center;
+    background-color: #ffffff;
+}
+.phoneList ul li:nth-child(odd){
+    margin-right: 0.5rem;
+}
+.phoneList ul li span{
+    display: block;
+    margin-left: 4.3rem;
+    box-sizing: border-box;
+    width: 6.6rem;
+    height: 2.2rem;
+    border: 0.1rem solid #0085cf;
+    border-radius: 5rem;
+    font-size: 1.3rem;
+    color: #0085cf;
+    line-height: 2.2rem;
+    text-align: center;
+}
+.phoneList ul li p{
+    font-size: 1.7rem;
+    line-height: 3.5rem;
+    color: #333333;
+}
+
+/*底部固定按钮*/
+.footer{
+    position: fixed;
+    bottom: 0;
+}
+.footer ul li{
+    box-sizing: border-box;
+    float: left;
+    height: 4.9rem;
+    text-align: center;
+    line-height: 4.9rem;
+}
+.footer .indentBtn{
+    padding-top: 0.8rem;
+    width: 10.6rem;
+    border-top: 0.1rem solid #f3f3f3;
+    background-color: #ffffff;
+    line-height: normal;
+}
+.footer .indentBtn span{
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.6rem;
+    background: url("../images/indent.png") center no-repeat;
+    background-size: cover;
+}
+.footer .indentBtn p{
+    font-size: 1.2rem;
+    color: #666666;
+    line-height: 2rem;
+}
+.footer .joinBtn{
+    width: 13.5rem;
+    font-size: 1.6rem;
+    color: #ffffff;
+    background: url("../images/joinBg.png") center no-repeat;
+    background-size: cover;
+}
+.footer .buyBtn{
+    width: 13.4rem;
+    font-size: 1.6rem;
+    color: #ffffff;
+    background-color: #0392e2;
+}
+
+.list i{
+    font-style: normal;
+}
+
+/*"我的备选"按钮*/
+.fixedBtn{
+    position: fixed;
+    bottom: 7rem;
+    right: 2rem;
+    width: 7.2rem;
+    height: 7.25rem;
+    background: url("../images/fixedBtn.png") center no-repeat;
+    background-size: cover;
+    z-index: 100;
+}
+.fixedBtn i{
+    position: absolute;
+    right: 0;
+    display: none;
+    width: 2rem;
+    height: 2rem;
+    font-style: normal;
+    border-radius: 50%;
+    font-size: 1.4rem;
+    color: #ffffff;
+    text-align: center;
+    line-height: 2rem;
+    background-color: #fd8e84;
+}
+
+/*遮罩层*/
+.mask {
+    position: absolute;
+    top: 0px;
+    filter: alpha(opacity=60);
+    background-color: #777;
+    z-index: 100;
+    left: 0px;
+    opacity: 0.6;
+    -moz-opacity: 0.6;
+}
+
+/*搜索条件为空*/
+.default{
+    box-sizing: border-box;
+    padding-top: 10rem;
+    width: 37.5rem;
+    height: 57rem;
+    text-align: center;
+    background-color: #ffffff;
+}
+.default span{
+    display: block;
+    margin:0 auto;
+    width: 17.5rem;
+    height: 15rem;
+    background: url("../images/default.png") center no-repeat;
+    background-size: cover;
+}
+.default p{
+    margin-top: -1.5rem;
+    font-size: 1.3rem;
+    color: #333333;
+}
+/*提示弹出层*/
+.opc{
+    display: none;
+    position: fixed;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top:40%;
+    width: 28rem;
+    height: 5rem;
+    border-radius: 1rem;
+    background-color: #7f7f7f;
+    text-align: center;
+    z-index: 999;
+}
+.opc p{
+    font-size: 1.8rem;
+    color: #ffffff;
+    line-height: 5rem;
+}
+/*备选弹出层*/
+.beixuan{
+    overflow: auto;
+    position: fixed;
+    bottom: 0;
+    padding: 0 1rem;
+    width: 37.5rem;
+    height: 0;
+    background-color: #ffffff;
+    z-index: 1000;
+}
+.beixuan p i{
+    display: inline-block;
+    margin-right: 0.5rem;
+    width: 1.45rem;
+    height: 1.25rem;
+    background: url("../images/laba.png") center no-repeat;
+    background-size: cover;
+}
+.beixuan p{
+    box-sizing: border-box;
+    font-size: 1.3rem;
+    color: #333333;
+    width: 37.5rem;
+    line-height: 4.3rem;
+}
+.beixuan p span{
+    display: inline-block;
+    margin-left: 11rem;
+}
+.beixuan ul li{
+    float: left;
+    box-sizing: border-box;
+    margin-bottom: 1rem;
+    width: 17.25rem;
+    height: 3.8rem;
+    font-size: 1.5rem;
+    line-height: 3.8rem;
+    text-align: center;
+    color: #333333;
+    background-color: #f3f3f3;
+}
+.beixuan ul li:nth-child(n+1){
+    margin-right: 1rem;
+}
+.beixuan ul{
+    height: 19.5rem;
+}
+.beixuan .beixuanBtn{
+    margin-top: 1rem;
+    margin-left: 0.5rem;
+    margin-bottom: 1rem;
+    display: block;
+    width: 34.65rem;
+    height: 4.95rem;
+    background: url("../images/beixuanBtn.png") center no-repeat;
+    background-size: cover;
+}
+.beixuan ul .bxActive,.list ul .bxActive{
+    color: #0085cf;
+    border: 0.05rem solid #0085cf;
+    background-color: #ffffff;
+}
+
+.beixuan ul li i{
+    display: inline-block;
+    display: none;
+    margin-left: 2.6rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    background: url("../images/x.png") center no-repeat;
+    background-size: cover;
+    line-height: 3.8rem;
+}

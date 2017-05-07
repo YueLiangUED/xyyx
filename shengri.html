@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>生日靓号</title>
+    <link rel="stylesheet" href="css/reset.min.css">
+    <link rel="stylesheet" href="css/shengri.css">
+    <style>
+        i{
+            font-style: normal;
+        }
+        .march-letter{
+            color: #0085cf;
+        }
+        .selected-slider{
+            background-color:#0085cf;
+            color:#ffffff
+        }
+        .selected-tel{
+            border:0.05rem solid #0085cf;
+        }
+    </style>
+</head>
+<body>
+<!--头部-->
+<div class="header">
+    <input id="input" type="text" placeholder="搜索您的生日(月份+日期)，如1013">
+    <i></i>
+</div>
+<div class="phoneList">
+    <ul id="tel-list" class="clear">
+
+    </ul>
+</div>
+<!--底部固定按钮-->
+<div class="footer">
+    <ul>
+        <li class="indentBtn">
+            <span></span>
+            <p>我的订单</p>
+        </li>
+        <li class="joinBtn">加入备选</li>
+        <li class="buyBtn">立即购买</li>
+    </ul>
+</div>
+<!--我的备选按钮-->
+<div class="fixedBtn">
+    <i>1</i>
+</div>
+<div class="opc">
+    <p></p>
+</div>
+<!--搜索条件为空-->
+<div class="default">
+    <span></span>
+    <p>快来搜索属于你的生日靓号吧~</p>
+</div>
+
+<!--遮罩层-->
+<div class="mask"></div>
+<!--备选弹出层-->
+<div class="beixuan">
+    <p>
+        <i></i>
+        从以下号码中选择你最喜欢的吧~
+        <span>编辑</span>
+    </p>
+    <ul class="clear">
+        <!--<li class="bxActive">15111272323<i></i></li>
+        <li>13515151515<i></i></li>
+        <li>13515151515<i></i></li>
+        <li>13515151515<i></i></li>
+        <li>13515151515<i></i></li>-->
+    </ul>
+    <span class="beixuanBtn"></span>
+</div>
+</body>
+</html>
+<script src="js/jquery-1.10.1.min.js"></script>
+<script src="js/index.js"></script>
+<script src="js/shengri.js"></script>

@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>爱情靓号</title>
+    <link rel="stylesheet" href="css/reset.min.css">
+    <link rel="stylesheet" href="css/swiper-3.4.2.min.css">
+    <link rel="stylesheet" href="css/aiqing.css">
+    <style>
+        i{
+            font-style: normal;
+        }
+        .march-letter{
+            color: #0085cf;
+        }
+        .selected-slider{
+            background-color:#0085cf;
+            color:#ffffff
+        }
+        .selected-tel{
+            border:0.05rem solid #0085cf;
+        }
+    </style>
+</head>
+<body>
+<!--头部-->
+<div class="header">
+    <input id="input" type="text" placeholder="搜索属于你的爱情号吧">
+    <i></i>
+    <div class="swiper-container">
+        <div id="select-zone" class="swiper-wrapper">
+            <div class="swiper-slide first selected-slider">
+                <p><span>520</span>·我爱你</p>
+            </div>
+            <div class="swiper-slide">
+                <p><span>521</span>·我爱你</p>
+            </div>
+            <div class="swiper-slide">
+                <p><span>213</span>·爱一生</p>
+            </div>
+            <div class="swiper-slide">
+                <p><span>230</span>·爱上你</p>
+            </div>
+            <div class="swiper-slide">
+                <p><span>257</span>·爱我妻</p>
+            </div>
+            <div class="swiper-slide">
+                <p><span>258</span>·爱我吧</p>
+            </div>
+            <div class="swiper-slide">
+                <p><span>512</span>·我要爱</p>
+            </div>
+            <div class="swiper-slide">
+                <p><span>531</span>·我想你</p>
+            </div>
+            <div class="swiper-slide">
+                <p><span>731</span>·心相印</p>
+            </div>
+            <div class="swiper-slide">
+                <p><span>758</span>·亲我吧</p>
+            </div>
+            <div class="swiper-slide">
+                <p><span>771</span>·亲亲你</p>
+            </div>
+            <div class="swiper-slide">
+                <p><span>813</span>·伴一生</p>
+            </div>
+            <div class="swiper-slide">
+                <p><span>912</span>·就要爱</p>
+            </div>
+            <div class="swiper-slide">
+                <p><span>927</span>·就爱妻</p>
+            </div>
+            <div class="swiper-slide">
+                <p><span>941</span>·就是你</p>
+            </div>
+            <div class="swiper-slide">
+                <p><span>121</span>·要爱你</p>
+            </div>
+            <div class="swiper-slide">
+                <p><span>1314</span>·一生一世</p>
+            </div>
+            <div class="swiper-slide">
+                <p><span>1372</span>·一厢情愿</p>
+            </div>
+            <div class="swiper-slide">
+                <p><span>1451</span>·你是唯一</p>
+            </div>
+        </div>
+    </div>
+    <div class="menu">
+        <span></span>
+    </div>
+</div>
+<div class="phoneList">
+    <ul id="tel-list" class="clear">
+
+    </ul>
+</div>
+<!--底部固定按钮-->
+<div class="footer">
+    <ul>
+        <li class="indentBtn">
+            <span></span>
+            <p>我的订单</p>
+        </li>
+        <li class="joinBtn">加入备选</li>
+        <li class="buyBtn">立即购买</li>
+    </ul>
+</div>
+<!--我的备选按钮-->
+<div class="fixedBtn">
+    <i>1</i>
+</div>
+<!--提示弹窗-->
+<div class="opc">
+    <p></p>
+</div>
+<!--全部标签-->
+<div class="all">
+    <p>全部标签</p>
+    <i class="close"></i>
+    <div class="line">
+        <hr>
+    </div>
+    <ul class="clear">
+        <li>
+            <a>521</a>
+            ·我爱你
+        </li>
+        <li>
+            <a>520</a>
+            ·我爱你
+        </li>
+        <li>
+            <a>213</a>
+            ·爱一生
+        </li>
+        <li>
+            <a>230</a>
+            ·爱上你
+        </li>
+        <li>
+            <a>257</a>
+            ·爱我妻
+        </li>
+        <li>
+            <a>258</a>
+            ·爱我吧
+        </li>
+        <li>
+            <a>512</a>
+            ·我要爱
+        </li>
+        <li>
+            <a>531</a>
+            ·我想你
+        </li>
+        <li>
+            <a>731</a>
+            ·心相印
+        </li>
+        <li>
+            <a>758</a>
+            ·亲我吧
+        </li>
+        <li>
+            <a>771</a>
+            ·亲亲你
+        </li>
+        <li>
+            <a>813</a>
+            ·伴一生
+        </li>
+        <li>
+            <a>912</a>
+            ·就要爱
+        </li>
+        <li>
+            <a>927</a>
+            ·就爱妻
+        </li>
+        <li>
+            <a>941</a>
+            ·就是你
+        </li>
+        <li>
+            <a>121</a>
+            ·要爱你
+        </li>
+        <li>
+            <a>1314</a>
+            ·一生一世
+        </li>
+        <li>
+            <a>1372</a>
+            ·一厢情愿
+        </li>
+        <li>
+            <a>1451</a>
+            ·你是唯一
+        </li>
+    </ul>
+</div>
+<!--遮罩层-->
+<div class="mask"></div>
+<!--备选弹出层-->
+<div class="beixuan">
+    <p>
+        <i></i>
+        从以下号码中选择你最喜欢的吧~
+        <span>编辑</span>
+    </p>
+    <ul class="clear">
+        <!--<li class="bxActive">15111272323<i></i></li>
+        <li>13515151515<i></i></li>
+        <li>13515151515<i></i></li>
+        <li>13515151515<i></i></li>
+        <li>13515151515<i></i></li>-->
+    </ul>
+    <span class="beixuanBtn"></span>
+</div>
+</body>
+</html>
+<script src="js/jquery-1.10.1.min.js"></script>
+<script src="js/swiper.min.js"></script>
+<script src="js/index.js"></script>
+<script src="js/aiqing.js"></script>
+<!--
+<script>
+    var mySwiper = new Swiper('.swiper-container',{
+        loop : true,
+        slideToClickedSlide:true,
+        normalizeSlideIndex:false,
+        slidesPerView : 'auto',
+        loopedSlides :19,
+        onInit: function (swiper) {
+            $('.swiper-slide.first').css({'backgroundColor':'#0085cf','color':'#ffffff'});
+        },
+        onTap: function (swiper) {
+            $('.swiper-slide').css({'background':'#ffffff','color':'#666666'});
+            mySwiper.clickedSlide.style.backgroundColor = '#0085cf';
+            mySwiper.clickedSlide.style.color = '#ffffff';
+        }
+    });
+
+</script>-->

@@ -1,0 +1,46 @@
+html,body{
+    background-color: #f3f3f3;
+}
+.del{
+    padding-top: 13.2rem;
+    width: 37.5rem;
+    height: 100%;
+}
+.del span{
+    margin: 0 auto;
+    display: block;
+    width: 14.2rem;
+    height: 12.2rem;
+    background: url("../images/del.png") center no-repeat;
+    background-size: cover;
+}
+.no-network{
+    padding-top: 13.6rem;
+    width: 37.5rem;
+    height: 100%;
+    text-align: center;
+}
+.no-network span{
+    margin: 0 auto 1rem;
+    display: block;
+    width: 8.8rem;
+    height: 8.8rem;
+    background: url("../images/no-network.png") center no-repeat;
+    background-size: cover;
+}
+.no-network p{
+    font-size: 1.4rem;
+    color: #666666;
+    line-height: 5rem;
+}
+.no-network .reload{
+    box-sizing: border-box;
+    margin: 0 auto;
+    width: 11.9rem;
+    height: 3.4rem;
+    border: 0.1rem solid #0085cf;
+    border-radius: 5rem;
+    font-size: 1.6rem;
+    line-height: 3.4rem;
+    color: #0085cf;
+}
