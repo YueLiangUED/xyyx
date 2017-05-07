@@ -46,7 +46,7 @@ function bindTelList() {
                     }
                 }
                 tmpStr+="</p> ";
-                tmpStr+=" <span>"+'入学靓号'+"</span> ";
+                tmpStr+=" <span>"+'入学纪念'+"</span> ";
                 tmpStr+=" </li> ";
             });
 

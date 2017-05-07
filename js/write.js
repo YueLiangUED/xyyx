@@ -136,4 +136,10 @@ $(function () {
         }
     })();
 
+    //配送到家姓名根据用户输入绑定
+    $('.network .name input').on('blur',function () {
+        $('.toHome .name input').val($('.network .name input').val());
+    });
+
+
 });
