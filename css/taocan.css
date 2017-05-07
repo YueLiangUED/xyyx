@@ -112,7 +112,8 @@ html,body{
     margin-left: 0.4rem;
 }
 .footer{
-    position: relative;
+    position: fixed;
+    bottom: 0;
     padding-left: 1rem;
     width: 37.5rem;
     height: 5.5rem;

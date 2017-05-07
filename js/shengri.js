@@ -54,7 +54,7 @@ function bindTelList() {
                     }
                 }
                 tmpStr+="</p> ";
-                tmpStr+=" <span>"+'生日靓号'+"</span> ";
+                tmpStr+=" <span>"+'生日专属'+"</span> ";
                 tmpStr+=" </li> ";
             });
 
