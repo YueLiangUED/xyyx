@@ -475,12 +475,12 @@ $(function () {
 
     })();
 
-    (function(){
+    //(function(){
         //$('.fixedBtn').css({'opacity':'1'})
         //滑动屏幕时"我的备选"按钮改变透明度并右移
         jQuery(window).bind('scrollstart', function(){
             console.log("start");
-            $('.fixedBtn').animate({'opacity':'0.3','right':'-5rem'})
+            $('.fixedBtn').animate({'opacity':'0.3','right':'-5rem'},0)
         });
 
         jQuery(window).bind('scrollstop', function(e){
@@ -488,5 +488,5 @@ $(function () {
             $('.fixedBtn').animate({'opacity':'1','right':'2rem'},500)
         });
 
-    })();
+    //})();
 });
