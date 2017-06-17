@@ -142,4 +142,85 @@ $(function () {
     });
 
 
+    //套餐弹窗
+    $('#selectedTc').click(function () {
+        $('.modal').show();
+        showMask();
+        $('.mask').click(function () {
+            showMask();
+        });
+    });
+
+
+
+    $('.front .img').on('click', function () {
+        var $front = $(this).parents('.front');
+        $('.front').removeClass('act');
+        $front.addClass('act');
+        $('.back').hide();
+    });
+    $('.details').on('click', function () {
+        $('.back').hide();
+        var $item = $(this).parents('.modal-item');
+        var $back = $item.find('.back');
+        $back.show();
+        var $front = $(this).parents('.front');
+        $('.front').removeClass('act');
+        $front.addClass('act');
+
+    });
+    $('.return').on('click', function () {
+        $('.back').hide();
+    })
+
+    $('.enter').on('click', function () {
+        var $parent = $(this).parents('.modal');
+        $parent.hide();
+        hideMask();
+        if($('#item48').hasClass('act')){
+            $('#selectedTc').val('2017校园48元卡');
+        }else if($('#item18').hasClass('act')){
+            $('#selectedTc').val('2017校园18元卡');
+        }
+    });
+
+    //优惠弹窗
+    $('#youhuiTc').click(function () {
+        $('.modal-youhui').show();
+        showMask();
+        $('.mask').click(function () {
+            showMask();
+        });
+    });
+    //关闭
+    $('.modal-close').click(function () {
+        $('.modal-youhui').hide();
+        hideMask();
+    });
+
+    //视频流量弹窗
+    $('.video-icon').on('click', function () {
+        $('.video-icon').removeClass('act');
+        $(this).addClass('act');
+    });
+    $('.enter2').on('click', function () {
+        var $parent = $(this).parents('.modal2');
+        $parent.hide();
+        hideMask();
+        if($('.yk').hasClass('act')){
+            $('#selectedLiuliang').val('任我看优酷视频流量包');
+        }else if($('.tx').hasClass('act')){
+            $('#selectedLiuliang').val('任我看腾讯视频流量包');
+        }else if($('.pptv').hasClass('act')){
+            $('#selectedLiuliang').val('任我看PPTV视频流量包');
+        }
+    });
+
+    $('#selectedLiuliang').click(function () {
+        $('.modal2').show();
+        showMask();
+        $('.mask').click(function () {
+            showMask();
+        });
+    });
 });

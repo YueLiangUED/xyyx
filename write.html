@@ -15,6 +15,47 @@
     <span>已选号码</span>
     <p>15711277221</p>
 </div>
+<!--套餐信息-->
+<div class="tcMessage content">
+    <div class="clear">
+        <span></span>
+        <p>
+            套餐信息
+            <a>
+                (
+                <i>*</i>
+                为必填项)
+            </a>
+        </p>
+    </div>
+    <div class="line"><hr></div>
+    <div class="selectTc info">
+        <p>
+            <i>*</i>
+            选择套餐
+        </p>
+        <input id="selectedTc" type="text" placeholder="请选择套餐">
+        <em></em>
+    </div>
+    <div class="line"><hr></div>
+    <div class="liuliang info">
+        <p>
+            <i>*</i>
+            任我看流量包
+        </p>
+        <input id="selectedLiuliang" type="text" placeholder="请选择视频流量包">
+        <em></em>
+    </div>
+    <div class="line"><hr></div>
+    <div class="youhui info">
+        <p>
+            <i>*</i>
+            优惠信息
+        </p>
+        <i>充50得120</i>
+        <em id="youhuiTc"></em>
+    </div>
+</div>
 <!--入网信息-->
 <div class="network content">
     <div class="clear">
@@ -26,6 +67,7 @@
                 <i>*</i>
                 为必填项)
             </a>
+            <em>根据国家实名制要求，请准确提供身份证信息</em>
         </p>
     </div>
     <div class="line"><hr></div>
@@ -85,6 +127,7 @@
             收货地址
         </p>
         <input id="selectCity" type="text" placeholder="请选择">
+        <em></em>
     </div>
     <div class="line"><hr></div>
     <input class="detailAdd" type="text" placeholder="请填写详细地址，不少于5个字">
@@ -196,6 +239,107 @@
 </div>
 <!--遮罩层-->
 <div id="mask" class="mask"></div>
+<!--套餐弹窗-->
+<div class="modal">
+    <!-- 第一个卡 -->
+    <div class="modal-item pr">
+        <!-- 正面 -->
+        <div id="item48" class="front act pa card">
+            <div class="img pac48 pa"></div>
+            <a href="javascript:;" class="btn pa details">查看资费详情</a>
+        </div>
+        <!-- 反面 -->
+        <div class="back pa card none">
+            <div class="img de48 pa"></div>
+            <a href="javascript:;" class="btn pa return">返回</a>
+        </div>
+    </div>
+    <!-- 第二个卡 -->
+    <div class="modal-item pr">
+        <!-- 正面 -->
+        <div id="item18" class="front pa card">
+            <div class="img pac18 pa"></div>
+            <a href="javascript:;" class="btn pa details">查看资费详情</a>
+        </div>
+        <!-- 反面 -->
+        <div class="back pa card none">
+            <div class="img de18 pa"></div>
+            <a href="javascript:;" class="btn pa return">返回</a>
+        </div>
+    </div>
+    <div class="enter">确认选择</div>
+</div>
+
+<!--优惠弹窗-->
+<div class="modal-youhui">
+    <div class="modal-title">
+        优惠活动
+    </div>
+    <div class="modal-content">
+        <div class="txt">
+            <h4>【充50得120特惠活动】</h4>
+            <p>预存50元，您预存的50元话费立即到账，当月立即赠送20元话费，从次月起，每月赠送10元，连续赠送5个月。</p>
+        </div>
+        <!-- <div class="txt">
+            <h4>【充200得220特惠活动】</h4>
+            <p>预存50元，您预存的50元话费立即到账，当月立即赠送20元话费，从次月起，每月赠送10元，连续赠送5个月。</p>
+        </div> -->
+        <div class="txt">
+            <h4>【活动规则】</h4>
+            <p>活动当月开始生效，生效期间每月最低消费18元且不可变更套餐。返还及赠送的话费，不可退、转，不可用于第三方通信账户支付类消费、违约金及代收费。整月停机，扣最低消费，话费正常赠送。承诺期间，若您参加其他有承诺消费限制的促销活动，承诺消费金额将叠加。</p>
+        </div>
+    </div>
+    <div class="box"></div>
+    <div class="modal-close"></div>
+    <div class="solid"></div>
+</div>
+<!--流量包弹窗-->
+<div class="modal2 none">
+    <div class="modal-title">
+        任我看超大流量包
+    </div>
+    <div class="modal-wrap">
+        <div class="video-btns">
+            <div class="video-item">
+                <i class="video-icon yk act"></i>
+                <span class="video-name">优酷视频</span>
+            </div>
+            <div class="video-item">
+                <i class="video-icon tx"></i>
+                <span class="video-name">腾讯视频</span>
+            </div>
+            <div class="video-item">
+                <i class="video-icon pptv"></i>
+                <span class="video-name">PPTV</span>
+            </div>
+        </div>
+        <div class="enter2">确认选择</div>
+        <div class="modal-content">
+            <div class="txt">
+                <h4>【任我看业务介绍】</h4>
+                <p>“任我看”是中国移动的视频流量产品，面向视频APP推出优惠流量资费，随时随地畅享指定APP视频。</p>
+            </div>
+            <div class="txt">
+                <h4>【任我看视频流量包业务规则】</h4>
+                <p>1、任我看30GB视频流量包订购成功后立即生效，仅可在国内使用（不含港澳台）。视频流量包每月自动续订。</p>
+                <p>2、视频流量当月清零、不能分享、不能转赠。</p>
+                <p>3、任我看视频流量包每次仅可选择1个视频APP，仅可订购1次。</p>
+            </div>
+            <div class="txt">
+                <h4>【任我看视频流量包使用范围】</h4>
+                <p>中国移动2G/3G/4G网络下，访问指定视频APP中的特定视频内容（其中优酷视频流量包中包含土豆视频内容）。但不包括以下内容：</p>
+                <p>1、客户端启动、登录及客户端内的图片、文字、视频内插播广告、弹幕、第三方广告、主播类视频、在线观看/下载/缓存第三方视频等。</p>
+                <p>2、手机号码处于国际或港澳台地区漫游状态下产生的流量。</p>
+                <p>3、利用手机设置代理服务器或VPN等方式，访问APP所产生的流量。</p>
+                <p>4、用无线上网卡、平板电脑、CPE、MIFI等非手机设备使用产生的流量。</p>
+                <p>5、手机作为热点使用产生的流量。</p>
+                <p>6、使用CMWAP接入点方式，访问视频APP所产生的流量。</p>
+                <p>7、使用优酷视频下载/缓存该网站上的视频所产生的流量。</p>
+                <p>8、使用聚力视频(PPTV)下载该网站上的视频所产生的流量。</p>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 </html>
 <script src="js/jquery-1.10.1.min.js"></script>

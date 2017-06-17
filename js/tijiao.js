@@ -37,7 +37,7 @@ $(function () {
     });
     //立即支付
     $('.pay').click(function () {
-        window.location.href = 'taocan.html';
+        window.location.href = '';
     });
 
     //已选号码

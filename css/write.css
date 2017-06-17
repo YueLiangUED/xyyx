@@ -1,5 +1,4 @@
 html,body{
-    overflow: hidden;
     background-color: #f3f3f3;
 }
 .time{
@@ -42,6 +41,7 @@ html,body{
 .content{
     box-sizing: border-box;
     position: relative;
+    margin-top: 1rem;
     padding: 0 1rem;
     width: 37.5rem;
     height: 13.3rem;
@@ -74,7 +74,6 @@ i{
     color: #fd8e84;
 }
 .line{
-    width: 37.5rem;
     height: 0.05rem;
 }
 .line hr{
@@ -216,6 +215,7 @@ i{
     height: 12.2rem;
 }
 .footer div:first-child{
+    box-sizing: border-box;
     width: 37.5rem;
     padding-left: 10rem;
     white-space: nowrap;
@@ -373,4 +373,324 @@ i{
     -moz-opacity: 0.4;
     -webkit-opacity: 0.4;
     -o-opacity: 0.4;
+}
+
+/*新增套餐信息样式*/
+.tcMessage.content{
+    position: relative;
+    height: 17.7rem;
+}
+.tcMessage.content .clear span{
+    background: url("../images/taocan-icon.png") center no-repeat;
+    background-size: cover;
+}
+.tcMessage.content .liuliang input{
+    top: 9rem;
+}
+.tcMessage.content .youhui i:nth-child(2){
+    position: absolute;
+    font-style: normal;
+    font-size: 1.4rem;
+    line-height: 4.4rem;
+    top: 13.5rem;
+    left: 11rem;
+    color: #333333;
+}
+.tcMessage.content .youhui em{
+    position: absolute;
+    top: 15rem;
+    display: inline-block;
+    width: 1.4rem;
+    height: 1.4rem;
+    right: 2rem;
+    background: url("../images/youhuits.png") center no-repeat;
+    background-size: cover;
+}
+.tcMessage.content .selectTc em,.tcMessage.content .liuliang em,.address em{
+    position: absolute;
+    top: 6rem;
+    right: 2rem;
+    display: inline-block;
+    width: 0.85rem;
+    height: 1.3rem;
+    background: url("../images/jiantou.png") center no-repeat;
+    background-size: cover;
+}
+.tcMessage.content .liuliang em{
+    top: 10.3rem;
+}
+.address em{
+    top: 10.2rem;
+}
+.network em{
+    font-style: normal;
+    font-size: 0.9rem;
+    color: #666666;
+}
+
+/*套餐弹窗样式*/
+.none {
+    display: none;
+}
+.pa {
+    position: absolute;
+}
+.pr {
+    position: relative;
+}
+.modal {
+    display: none;
+    position: fixed;
+    top: 9rem;
+    left: 50%;
+    margin-left: -15.75rem;
+    z-index: 1100;
+}
+.modal-item {
+    margin-top: 1.5rem;
+    width: 31.5rem;
+    height: 15rem;
+    overflow: hidden;
+}
+.pac48,
+.pac18,
+.de48,
+.de18 {
+    background-image: url("../images/card_bg.png");
+    background-repeat: no-repeat;
+    background-size: 300%;
+}
+.pac48 {
+    background-position: 0 -15rem;
+}
+.pac18 {
+    background-position: 0 0;
+}
+.de48 {
+    background-position: -63rem -15rem;
+}
+.de18 {
+    background-position: -63rem 0;
+}
+
+.card,
+.img {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.btn {
+    bottom: 1rem;
+    right: 1rem;
+    color: #cacaca;
+}
+.back .btn {
+    color: #fff;
+}
+/*激活*/
+.front.act .pac48 {
+    background: url("../images/card_bg.png") no-repeat;
+    background-position: -31.5rem -15rem;
+    background-size: 300%;
+}
+.front.act .pac18 {
+    background: url("../images/card_bg.png") no-repeat;
+    background-position: -31.5rem 0;
+    background-size: 300%;
+}
+.front.act .btn {
+    color: #fff;
+}
+.enter {
+    width: 31.5rem;
+    height: 5rem;
+    margin-top: 3rem;
+    background: url("../images/enter.png") no-repeat center;
+    background-size: 100%;
+    font-size: 1.8rem;
+    color: #fff;
+    text-align: center;
+    line-height: 5rem;
+}
+/*优惠弹窗样式*/
+.modal-youhui{
+    display: none;
+    position: fixed;
+    top: 11.65rem;
+    left: 50%;
+    width: 31rem;
+    margin-left: -15.5rem;
+    z-index: 1100;
+    /*transform: scale(0, 0);
+    -webkit-transform: scale(0, 0);
+    transition: all 0.3s linear;
+    -webkit-transition: all 0.3s linear;*/
+}
+.modal-title {
+    height: 6.5rem;
+    line-height: 6.5rem;
+    text-align: center;
+    font-size: 2.1rem;
+    color: #3d9cff;
+    background-color: #ecf5ff;
+    font-weight: 700;
+    border-radius: 1rem 1rem 0 0;
+    -webkit-border-radius: 1rem 1rem 0 0;
+    overflow: hidden;
+    background-image: url("../images/wifi_icon.png");
+    background-repeat: no-repeat;
+    background-position: -1.15rem top;
+    background-size: 25%;
+}
+
+.modal-content {
+    height: 31rem;
+    padding: 0 1.5rem;
+    overflow-y: auto;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    background: #fff;
+}
+.box {
+    height: 1.5rem;
+    background-color: #fff;
+    border-radius: 0 0 1rem 1rem;
+    -webkit-border-radius: 0 0 1rem 1rem;
+}
+.modal-content h4 {
+    padding-left: 0;
+    font-weight: 100;
+    font-size: 1.5rem;
+    color: #0085cf;
+    margin: 1rem 0 0.5rem;
+}
+.modal-content p {
+    text-indent: 2em;
+    padding: 0 0.5rem;
+    font-size: 1.4rem;
+    line-height: 1.5rem;
+    letter-spacing: 0.1rem;
+    color: #252525;
+}
+.modal-close {
+    position: absolute;
+    top: -4rem;
+    right: 0;
+    width: 2.5rem;
+    height: 2.5rem;
+    background: url("../images/modal_cl.png") no-repeat center;
+    background-size: 100%;
+    z-index: 10000;
+}
+.modal .solid {
+    position: absolute;
+    top: -1.5rem;
+    right: 1.25rem;
+    height: 1.5rem;
+    border-right: 1px solid #fff;
+}
+
+/*视频流量弹窗样式*/
+.modal2 {
+    position: fixed;
+    top: 4.5rem;
+    left: 50%;
+    width: 31rem;
+    margin-left: -15.5rem;
+    z-index: 1100;
+}
+.modal2 .modal-title {
+    height: 6.5rem;
+    line-height: 6.5rem;
+    text-align: center;
+    font-size: 2.1rem;
+    color: #3d9cff;
+    background-color: #ecf5ff;
+    border-radius: 10px 10px 0 0;
+    -webkit-border-radius: 10px 10px 0 0;
+    overflow: hidden;
+    background-image: url("../images/wifi_icon.png");
+    background-repeat: no-repeat;
+    background-position: -1.5rem top;
+    background-size: 25%;
+}
+.modal2 .modal-wrap {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 0 0 10px 10px;
+    -webkit-border-radius: 0 0 10px 10px;
+    overflow: hidden;
+}
+.video-btns {
+    width: 100%;
+    background: #ecf5ff;
+    padding: 1.5rem;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-between;
+    height: 11rem;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+.video-item {
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-between;
+    flex-flow: column;
+    height: 100%;
+    text-align: center;
+}
+.video-icon {
+    width: 5rem;
+    height: 5rem;
+    background-image: url("../images/video_icon.png");
+    background-repeat: no-repeat;
+    background-size: 300%;
+}
+.yk {
+    background-position: 0 0;
+}
+.tx {
+    background-position: -5rem 0;
+}
+.pptv {
+    background-position: -10rem 0;
+}
+.yk.act {
+    background-position: 0 -5rem;
+}
+.tx.act {
+    background-position: -5rem -5rem;
+}
+.pptv.act {
+    background-position: -10rem -5rem;
+}
+.enter2 {
+    width: 16.5rem;
+    height: 3.5rem;
+    margin: 1.5rem auto 0;
+    line-height: 3.5rem;
+    text-align: center;
+    color: #fff;
+    font-size: 1.6rem;
+    background: #3d9cff;
+    border-radius: 1.75rem;
+}
+.modal2 .modal-content {
+    margin-top: 3rem;
+    height: 14.5rem;
+    width: 100%;
+    overflow-y: auto;
+    background: #fff;
+    padding-bottom: 1.5rem;
+}
+.modal2 .modal-content h4 {
+    font-size: 1.2rem;
+    color: #0085cf;
+    margin: 0.2rem 0;
+}
+.modal2 .modal-content p {
+    font-size: 1.2rem;
+    color: #252525;
 }

@@ -104,11 +104,11 @@ $(function () {
 
     //备选中立即购买按钮
     $('.beixuanBtn').click(function () {
-        window.location.href = 'taocan.html';
+        window.location.href = 'write.html';
     })
     //立即购买按钮
     $('.buyBtn').click(function () {
-        window.location.href = 'taocan.html';
+        window.location.href = 'write.html';
     });
     //入学靓号
     $('.aiqingBtn').click(function () {
@@ -286,7 +286,8 @@ $(function () {
     $('.fixedBtn').click(function () {
         $('.beixuan p span').text('编辑');
         //console.log(localStorage.getItem('joinitem'));
-            if(localStorage.getItem('joinitem') == null){
+            if(localStorage.getItem('joinitem') == '{}'){
+                //console.log(1);
                 $('.opc').show().delay(2000).hide(300);
                 $('.opc p').text('小主，您还没有选择号码哦~');
                 return false;
@@ -475,18 +476,17 @@ $(function () {
 
     })();
 
-    //(function(){
-        //$('.fixedBtn').css({'opacity':'1'})
+
         //滑动屏幕时"我的备选"按钮改变透明度并右移
         jQuery(window).bind('scrollstart', function(){
-            console.log("start");
+            //console.log("start");
             $('.fixedBtn').animate({'opacity':'0.3','right':'-5rem'},0)
         });
-
+        //停止滑动时初始化
         jQuery(window).bind('scrollstop', function(e){
-            console.log("end");
+            //console.log("end");
             $('.fixedBtn').animate({'opacity':'1','right':'2rem'},500)
         });
 
-    //})();
+
 });
